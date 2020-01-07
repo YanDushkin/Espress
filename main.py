@@ -23,7 +23,6 @@ class CoffeeShow(QMainWindow):
         for i, part in enumerate(data):
             self.coffee_table_widget.setRowCount(self.coffee_table_widget.rowCount() + 1)
             for j, item in enumerate(part):
-                print(i, j, item)
                 self.coffee_table_widget.setItem(i, j, QTableWidgetItem(str(item)))
         self.coffee_table_widget.resizeColumnsToContents()
 
